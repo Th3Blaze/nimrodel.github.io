@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<link rel="shortcut icon" href="favicon.png">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comuniquemonos</title>
+</head>
+<body>
+    <form action="index.html" method="post">
+        <h2>Comuniquemonos</h2>
+        <br>
+        <br>
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" required="required"> 
+        <br>
+        <br>
+        <label for="correo">Correo</label>
+        <input type="email"  pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required="required">
+        <br>
+        <br>
+        <label for="telefono">Telefono</label>
+        <input placeholder="123456789" type="text" name="telefono" id="telefono" required="required" pattern="[0-9]{9}" maxlength="9"> 
+        <br>
+        <br>
+        <label for="motivos">Motivo</label>
+        <input list="motivos" name="motivo" id="motivo" required="required">
+        <datalist id="motivos">
+            <option value="Felicitaciones">
+            <option value="Reclamos">
+            <option value="Comsultas">
+            <option value="Sugerencias">
+        </datalist> 
+        <br>
+        <br>
+        <label for="sugerencia">Sugerencias</label>
+        <br>
+        <br>
+        <textarea name="sugerencia" id="sugerencia" cols="30" rows="10" required="required"></textarea>
+        <br>
+        <br>
+        <input type="submit" value="Enviar">
+        <p>Todos los Derechos Reservados &#174</p>
+    </form>
+</body>
+</html>
