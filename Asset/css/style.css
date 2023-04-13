@@ -1,0 +1,217 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(180, 180, 180);
+}
+
+div {
+    align-self: center;
+}
+
+#padeo {
+    padding-top: auto;
+}
+
+.ex2 {
+    background-color: rgb(6, 7, 7);
+    width: 80%;
+    height: 65px;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    position: sticky;
+    background-image: url("Asset/fondo.jpg");
+}
+
+#fondo {
+    background-image: url("Asset/fondo.jpg");
+    background-color: black;
+}
+
+#division {
+    margin: 0;
+    padding: 0;
+    border-color: transparent;
+    border-style: solid;
+}
+
+h1 {
+    text-align: center;
+    font-style: normal;
+    margin-top: 10%;
+    color: grey;
+}
+
+.linea {
+    height: 1px;
+    width: fit-content;
+    background-color: black;
+    text-align: left;
+}
+
+#posicion {
+    display: inline-block;
+}
+
+#alinea {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#alinea3 {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 5%;
+}
+
+.alinea2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
+    color: white;
+}
+
+h3 {
+    text-align: center;
+}
+
+.brlarge {
+    display: block;
+    margin-bottom: 5em;
+}
+
+.brmedium {
+    display: block;
+    margin-bottom: 1em;
+}
+
+.brxlarge {
+    display: block;
+    margin-bottom: 10em;
+}
+
+#flotar {
+    float: left;
+}
+
+.caja {
+    background-color: #070707;
+    color: white;
+    width: 320px;
+    height: fit-content;
+    border-radius: 5px;
+}
+
+.fondo2 {
+    height: 300px;
+    width: 100%;
+    background-image: url("../fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    position: relative;
+}
+
+#fondo3 {
+    height: 65px;
+    width: 30%;
+    background-image: url("../fondo.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+#fondo4 {
+    height: 65px;
+    background-image: url("../fondo2.png");
+    background-repeat: repeat-x;
+    background-size: contain;
+}
+
+@media screen and (max-width:991px) {
+    .ocultar-div {
+        display: none;
+    }
+}
+
+.bd {
+    background-image: url("../fondo2.png");
+    background-repeat: repeat-x;
+
+}
+
+.contenedor {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5%;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.7;
+    padding: 4%;
+    border-radius: 2%;
+    color: white;
+}
+
+/*modal*/
+
+.btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn:active {
+    transform: scale(0.9);
+}
+
+.close-modal {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.modal {
+    width: 450px;
+    position: fixed;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: top 0.3s ease-in-out;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    z-index: 20;
+    background-color: #000000;
+    opacity: 0;
+}
+
+.modal.active {
+    top: 30%;
+}
+
+.modal .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.modal .body {
+    padding: 0.75rem;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#overlay.active {
+    display: block;
+}
